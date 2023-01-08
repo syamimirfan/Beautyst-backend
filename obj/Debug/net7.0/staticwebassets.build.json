@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "/KvyoTKq1LML9vMjr7RvEjFiYPoWJpm1NdYwdAkZ3Jw=",
+  "Source": "Beautyst-backend",
+  "BasePath": "_content/Beautyst-backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Beautyst-backend\\wwwroot",
+      "Source": "Beautyst-backend",
+      "ContentRoot": "C:\\Users\\Padice\\Desktop\\SEMESTER 5\\WEB DEVELOPMENT\\GROUP PROJECT\\Beautyst-backend\\wwwroot\\",
+      "BasePath": "_content/Beautyst-backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
