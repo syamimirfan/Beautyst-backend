@@ -34,16 +34,22 @@ namespace Beautyst_backend.Controllers
              return Ok(await _context.ContactUs.ToListAsync());
         }
 
-        [HttpDelete("DeleteContactUs")]
-        // [ProducesResponseType(200)]
-        // [ProducesResponseType(404)]
+        [HttpDelete("{id:int}")]
+        [ProducesResponseType(200)]
+        [ProducesResponseType(404)]
         public async Task<ActionResult<List<ContactUs>>> deleteContactUs([FromRoute] int id) {
     
             var contact = await _context.ContactUs.FindAsync(id);
+        
+            if (contact == null)
+            {
+                return NotFound();
+            }
 
             _context.ContactUs.Remove(contact);
-             await _context.SaveChangesAsync();
-             return Ok(await _context.ContactUs.ToListAsync());
+            await _context.SaveChangesAsync();
+
+            return Ok();
         }
     }
 }
